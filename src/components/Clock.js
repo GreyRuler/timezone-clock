@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { nanoid } from 'nanoid';
 
-export default function Clock({title, timezone = 3}) {
+export default function Clock({clock, onRemove}) {
 	const idElement = nanoid()
 	const date = new Date()
 	date.setHours(
-		date.getHours() + date.getTimezoneOffset() / 60 + Number(timezone)
+		date.getHours() + date.getTimezoneOffset() / 60 + Number(clock.timezone)
 	)
 	const arrowHourRotate = [
 		{transform: `rotate(${(date.getHours() + date.getMinutes() / 60) * 30}deg)`},
@@ -49,7 +49,11 @@ export default function Clock({title, timezone = 3}) {
 	})
 	return (
 		<div className="clock-item" id={idElement}>
-			<span className="title">{title}</span>
+			<span className="title">{clock.title}</span>
+			<span className="material-symbols-outlined"
+				  onClick={() => onRemove(clock.id)}>
+				close
+			</span>
 			<div className="clock">
 				<div className="circle">
 					<span className="point"></span>

@@ -1,4 +1,5 @@
 import './App.css'
+import './assets/css/google-icons.css'
 import ClockForm from './components/ClockForm';
 import { useState } from 'react';
 import ClockList from './components/ClockList';
@@ -25,11 +26,15 @@ function App() {
 		setTitle('')
 		setTimezone('')
 	}
+	const onRemove = (id) => {
+		setClocks(clocks.filter(clock => clock.id !== id))
+	}
 	return (
 		<div className="app">
 			<ClockForm onSubmit={onSubmit} handlerChangeTitle={handlerChangeTitle}
-					   handlerChangeTimezone={handlerChangeTimezone}/>
-			<ClockList clocks={clocks}/>
+					   handlerChangeTimezone={handlerChangeTimezone}
+					   timezone={timezone} title={title}/>
+			<ClockList clocks={clocks} onRemove={onRemove}/>
 		</div>
 	);
 }
