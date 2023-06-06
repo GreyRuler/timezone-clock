@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/timezone-clock/static/css/main.7a7edc2d.css",
-    "main.js": "/timezone-clock/static/js/main.e84aaf68.js",
+    "main.css": "/timezone-clock/static/css/main.df0f728e.css",
+    "main.js": "/timezone-clock/static/js/main.1962e150.js",
     "static/js/787.de2415a6.chunk.js": "/timezone-clock/static/js/787.de2415a6.chunk.js",
     "index.html": "/timezone-clock/index.html",
-    "main.7a7edc2d.css.map": "/timezone-clock/static/css/main.7a7edc2d.css.map",
-    "main.e84aaf68.js.map": "/timezone-clock/static/js/main.e84aaf68.js.map",
+    "main.df0f728e.css.map": "/timezone-clock/static/css/main.df0f728e.css.map",
+    "main.1962e150.js.map": "/timezone-clock/static/js/main.1962e150.js.map",
     "787.de2415a6.chunk.js.map": "/timezone-clock/static/js/787.de2415a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a7edc2d.css",
-    "static/js/main.e84aaf68.js"
+    "static/css/main.df0f728e.css",
+    "static/js/main.1962e150.js"
   ]
 }
